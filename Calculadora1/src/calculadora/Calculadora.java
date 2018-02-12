@@ -11,42 +11,32 @@ package calculadora;
  */
 public class Calculadora {
 
-     private int x;
-    private int y;
-    private int r;
+    protected double x;
+    private double y;
+    private double r;
 
     void sumar() {
         r = x + y;
     }
 
     void restar() {
-        if (x < y) {
-            int a;
-            a = x;
-            x = y;
-            y = a;
-
-        }
-        if (x < 0) {
-            x = -x;
-            y = -y;
-        }
+        r = x - y;
     }
-     void multiplicar(){
-         r = x + y;
-     }
 
-    public int getR() {
+    public double getR() {
         return r;
     }
 
-    public void setX(int x) {
+    public void setX(double x) {
         this.x = x;
     }
 
-    public void setY(int y) {
+    public void setY(double y) {
         this.y = y;
     }
+    
+    
+
      
      
              
